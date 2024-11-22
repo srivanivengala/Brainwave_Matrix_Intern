@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+    background-image:url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwc2VydmljZXN8ZW58MHx8MHx8fDA%3D") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* color: #ffffff; */
+  }
+
+  .container {
+    /* background: #ffffff; */
+    color: #333333;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  input, select, button {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  input{
+      width:94%
+  }
+  select,button{
+       width:100%
+  }
+  input:focus, select:focus {
+    border: 1px solid black;
+    outline: none;
+  }
+  button {
+    background-color:#28a745;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color:#3fb95c;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f9f9f9; */
+    color: #333333;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  li:hover {
+    transform: translateY(-3px);
+  }
+
+  li.completed {
+    text-decoration: line-through;
+    background-color: #d1e7dd;
+    color: #155724;
+  }
+
+  .icons i {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #6a11cb;
+    
+    transition: color 0.3s;
+  }
+
+  .icons i:hover {
+    color: #2575fc;
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 24px;
+    }
+
+    input, select, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+    
+  }
